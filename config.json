@@ -28,6 +28,10 @@
             }
         }
     },
+    "proposals": {
+        "enabled" : false,
+        "updateInterval": 600000
+    },
     "cacheTTL" : 20,
     "enableCandles" : false,
     "updateCandlesInterval" : 30000,
