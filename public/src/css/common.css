@@ -257,10 +257,6 @@ a:hover {
   display: block;
 }
 
-.navbar-form {
-  margin-top: 23px;
-}
-
 @media (max-width: 1200px) {
   .status {
     display: none;
@@ -381,7 +377,6 @@ a:hover {
   background-color: #080808;
   border-radius: 3px;
   margin-left: 10px;
-  margin-top: 12px;
   min-width: 389.375px;
   min-height: 29px;
   font-size: 12px;
@@ -1053,4 +1048,16 @@ a.sort-order span.reverse:after {
 .proposal-icon {
     vertical-align: middle;
     margin-top: -5px;
+}
+
+@media (min-width: 767px) {
+  .navbar-collapse.collapse.valign {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .navbar-right {
+    margin-left: auto;
+  }
 }
