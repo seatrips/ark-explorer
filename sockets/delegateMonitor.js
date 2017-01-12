@@ -235,8 +235,8 @@ module.exports = function (app, connectionHandler, socket) {
                 data.lastBlock.block = _.first (result.blocks);
                 var lb_delegate = findActiveByBlock(data.lastBlock.block);
                 data.lastBlock.block.delegate = {
-                    username: lb_delegate.username,
-                    address: lb_delegate.address,
+                    username: lb_delegate && lb_delegate.username || null,
+                    address: lb_delegate && lb_delegate.address || null,
                 };
 
                 async.eachSeries(result.blocks, function (b, cb) {

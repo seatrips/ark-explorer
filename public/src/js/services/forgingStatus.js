@@ -34,7 +34,7 @@ angular.module('lisk_explorer.tools').service('forgingStatus',
           } else if (status.awaitingSlot === 2) {
               // Awaiting slot, but missed block in last round
               status.code = 4;
-          } else if (!status.blockAt || !status.updatedAt) {
+          } else if (!status.blockAt && !status.updatedAt) {
               // Awaiting status or unprocessed
               status.code = 5;
           // For delegates which not forged a signle block yet (statuses 0,3,5 not apply here)
