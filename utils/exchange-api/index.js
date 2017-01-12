@@ -66,7 +66,7 @@ module.exports = function (config) {
                 }
             ]
         },
-        'LSKBTC' : {
+        'ARKBTC' : {
             'poloniex' : [
                 'Poloniex',
                 'https://poloniex.com/public?command=returnTicker',
@@ -74,15 +74,15 @@ module.exports = function (config) {
                     if (res.error) {
                         return cb(res.error);
                     } else {
-                        return cb(null, res.BTC_LSK.last);
+                        return cb(null, res.BTC_ARK.last);
                     }
                 }
             ]
         },
-        'LSKCNY' : {
+        'ARKCNY' : {
             'jubi' : [
                 'Jubi',
-                'https://www.jubi.com/api/v1/ticker/lsk',
+                'https://www.jubi.com/api/v1/ticker/ARK',
                 function (res, cb) {
                     if (res.last) {
                         return cb(null, res.last);

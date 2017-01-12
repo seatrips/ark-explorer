@@ -21,14 +21,14 @@
 }
 
 html, body {
-  color: #544835;
+  color: #2F3336;
   font-family: 'Roboto', 'Ubuntu', sans-serif;
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #544835;
+  color: #2F3336;
   font-family: 'Roboto', 'Ubuntu', sans-serif;
 }
 
@@ -55,7 +55,7 @@ a:hover {
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
   color: white;
-  background-color: #655740;
+  background-color: #080808;
 }
 
 /* Styling for the ngProgress itself */
@@ -193,10 +193,10 @@ a:hover {
 
 .navbar-default .navbar-toggle .icon-bar { background-color: white; }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #544835;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #2F3336;}
 
 .navbar-default {
-  background-color: #544835;
+  background-color: #2F3336;
   margin: 0;
   border: 0;
 }
@@ -212,24 +212,24 @@ a:hover {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-  background-color: #3b3225;
+  background-color: #080808;
   color: white;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #655740;
+  background-color: #080808;
   color: white;
 }
 
 .navbar-default .navbar-nav>li>a:focus {
-  background-color: #3b3225;
+  background-color: #080808;
   color: white;
 }
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
-  background-color: #655740;
+  background-color: #080808;
   color: white;
 }
 
@@ -244,7 +244,7 @@ a:hover {
     margin-bottom: 1px;
   }
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    background-color: #655740;
+    background-color: #080808;
     color: white;
   }
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
@@ -277,7 +277,7 @@ a:hover {
 }
 
 .nav-tabs>li>a {
-  color: #544835;
+  color: #2F3336;
 }
 
 .nav-tabs.nav-justified>.active>a,
@@ -302,18 +302,18 @@ a:hover {
 
 .navbar-default .navbar-brand {
   color: white;
-  padding: 13px;
-  height: 76px;
+  padding: 10px;
+  height: 100%;
 }
 
 .navbar-brand .logo {
-  height: 55px;
+  height: 100%;
   width: 100px;
+  text-align: center;
 }
 
 .navbar-brand .logo img {
   height: 100%;
-  width: 100%;
 }
 
 .navbar-form .form-control {
@@ -378,7 +378,7 @@ a:hover {
   float: left;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #655740;
+  background-color: #080808;
   border-radius: 3px;
   margin-left: 10px;
   margin-top: 12px;
@@ -448,7 +448,7 @@ a:hover {
 }
 
 .block-id {
-  background-color: #544835;
+  background-color: #2F3336;
   border: 3px solid white;
   margin: 0 auto;
   width: 165px;
@@ -614,7 +614,7 @@ a:hover {
 
 /* Set the fixed height of the footer here */
 #footer {
-  background-color: #544835;
+  background-color: #2F3336;
   color: white;
   height: 48px;
   overflow: hidden;
@@ -636,7 +636,7 @@ a:hover {
 }
 
 #footer .col-right a {
-  color: #655740;
+  color: #080808;
   margin-left: 10px;
 }
 
@@ -845,7 +845,7 @@ a:hover {
 }
 
 .tx-id {
-  background-color: #544835;
+  background-color: #2F3336;
   border: 3px solid white;
   margin: 0 auto;
   width: 165px;
@@ -1019,7 +1019,7 @@ a.v_highlight_more {
 /* Sort Order */
 
 a.sort-order {
-  color: #544835;
+  color: #2F3336;
 }
 
 a.sort-order:focus, .sort-order:hover {

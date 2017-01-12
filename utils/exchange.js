@@ -13,8 +13,8 @@ module.exports = function (config) {
         api.getPriceTicker(function (err, result) {
             if (result) {
                 _.each(result.BTC, function (ticker, key) {
-                    if (!result.LSK[key]) {
-                        result.LSK[key] = result.LSK.BTC * ticker;
+                    if (!result.ARK[key]) {
+                        result.ARK[key] = result.ARK.BTC * ticker;
                     }
                 });
                 exchange.tickers = result;

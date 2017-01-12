@@ -56,16 +56,16 @@ angular.module('lisk_explorer')
         var lisk = liskFilter (amount),
             factor = 1;
 
-        if (currency.tickers && currency.tickers.LSK && currency.tickers.LSK[currency.symbol]) {
-          factor = currency.tickers.LSK[currency.symbol];
-        } else if (currency.symbol !== 'LSK') {
+        if (currency.tickers && currency.tickers.ARK && currency.tickers.ARK[currency.symbol]) {
+          factor = currency.tickers.ARK[currency.symbol];
+        } else if (currency.symbol !== 'ARK') {
           // Exchange rate not available for current symbol
           return 'N/A';
         }
 
         if (decimal_places === undefined) {
           switch (currency.symbol) {
-            case 'LSK':
+            case 'ARK':
             case 'BTC':
               return numberFilter ((lisk * factor), 8).replace (/\.?0+$/, '');
             default:
@@ -78,9 +78,9 @@ angular.module('lisk_explorer')
   })
   .filter('nethash', function () {
       return function (nethash) {
-          if (nethash === 'da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba') {
+          if (nethash === 'ce6b3b5b28c000fe4b810b843d20b971f316d237d5a9616dbc6f7f1118307fc6') {
               return 'Testnet';
-          } else if (nethash === 'ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511')  {
+          } else if (nethash === '')  {
               return 'Mainnet';
           } else {
               return 'Local';
@@ -92,7 +92,7 @@ angular.module('lisk_explorer')
           if (isNaN(height)) {
               return 0;
           } else {
-              return Math.floor(height / 101) + (height % 101 > 0 ? 1 : 0);
+              return Math.floor(height / 51) + (height % 51 > 0 ? 1 : 0);
           }
       };
   })

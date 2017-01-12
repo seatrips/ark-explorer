@@ -127,7 +127,7 @@ module.exports = function (app, connectionHandler, socket) {
     var updateDelegate = function (delegate, updateForgingTime) {
         // Update delegate with forging time
         if (updateForgingTime) {
-            delegate.forgingTime = tmpData.nextForgers.delegates.indexOf(delegate.publicKey) * 10;
+            delegate.forgingTime = tmpData.nextForgers.delegates.indexOf(delegate.publicKey) * 8;
         }
 
         // Update delegate with info if should forge in current round
@@ -309,7 +309,7 @@ module.exports = function (app, connectionHandler, socket) {
     };
 
     var getRound = function (height) {
-        return Math.floor(height / 101) + (height % 101 > 0 ? 1 : 0);
+        return Math.floor(height / 51) + (height % 51 > 0 ? 1 : 0);
     };
 
     var getRoundDelegates = function (delegates, height) {
