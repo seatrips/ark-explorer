@@ -1061,3 +1061,10 @@ a.sort-order span.reverse:after {
     margin-left: auto;
   }
 }
+
+.tx-id-list {
+  max-width: 380px;
+}
+.tx-id-votes {
+  max-width: 260px;
+}
