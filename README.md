@@ -1,4 +1,4 @@
-# Lisk Blockchain Explorer
+# Ark Blockchain Explorer
 
 Lisk Explorer version 1.0.0 works in conjunction with the Lisk Core API. It uses Redis for caching data and Freegeoip to parse IP geo-location data.
 
@@ -36,11 +36,11 @@ These programs and resources are required to install and run Lisk Explorer
 
   `sudo npm install -g grunt`
 
-- Forever (<https://github.com/foreverjs/forever>) -- Forever manages the node processes for Lisk Explorer
+- Forever (<https://github.com/foreverjs/forever>) -- Forever manages the node processes for ark Explorer
 
   `sudo npm install -g forever`
 
-- Git (<https://github.com/git/git>) -- Used for cloning and updating Lisk Explorer
+- Git (<https://github.com/git/git>) -- Used for cloning and updating ark Explorer
 
   `sudo apt-get install -y git`
 
@@ -53,8 +53,8 @@ These programs and resources are required to install and run Lisk Explorer
 Clone the Lisk Explorer Repository:
 
 ```
-git clone https://github.com/LiskHQ/lisk-explorer.git
-cd lisk-explorer
+git clone https://github.com/seatrips/ark-explorer.git
+cd ark-explorer
 npm install
 bower install
 ```
